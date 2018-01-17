@@ -46,7 +46,7 @@ journalistes2.each do |journaliste|
 	begin
 	client.update("@#{journaliste} Je suis élève à The Hacking Projet(@TheHackingProject) une formation gratuite au code et je viens de faire un bot Twitter trop cool ! Vive @THP")
 	puts "message envoyé à #{journaliste} "
-	sleep(5)
+	sleep(10)
 	rescue Twitter::Error =>e
 		next
 	end
